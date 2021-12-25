@@ -1,0 +1,19 @@
+before if
+%if if-pattern%
+	before if-if
+	%if if-if-pattern%
+		if-if
+	%else%
+		if-else
+	%end%
+	after if-if
+%else%
+    before else-if
+	%if if-if-pattern%
+		else-if
+	%else%
+		else-else
+	%end%
+	after else-if
+%end%
+after if
